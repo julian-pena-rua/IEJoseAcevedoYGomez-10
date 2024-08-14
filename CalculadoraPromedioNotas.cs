@@ -77,7 +77,7 @@ class PromedioNotas {
         double nota1, nota2, nota3,promedio;
         Console.WriteLine("Cargando..");
         Console.WriteLine("Cargando...");
-        Console.WriteLine("Escribir nota 1: ");
+        
         nota1 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Escribir nota 2: ");
         nota2 = Convert.ToDouble(Console.ReadLine());
@@ -86,6 +86,16 @@ class PromedioNotas {
         Console.WriteLine("Cargando..");
         Console.WriteLine("Cargando.");
         promedio = (nota1+nota2+nota3)/3;
+        
+        if (promedio < 3){
+            Console.WriteLine("Perdió");
+        }
+        if (promedio >= 3 & promedio < 4.5){
+                Console.WriteLine("Aceptable");
+        }
+        if (promedio >= 4.5){
+            Console.WriteLine("Excelente");
+        }
         Console.WriteLine("Su promedio es: " + promedio);
     }
     
